@@ -44,7 +44,9 @@ class MyApp extends StatelessWidget{
         //Row-listing - mainAxis alignment
         // bottomNavigationBar: Row(
         //   children: const [
+        // Expanded(
         //     //Icons(Icons.backpack),
+        //  ),
         //Icons(Icons.person),
         // Icons(Icons.leaderboard)
         //   ],
