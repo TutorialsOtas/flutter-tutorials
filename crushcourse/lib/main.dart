@@ -1,22 +1,25 @@
 import 'package:flutter/material.dart';
+import './random_word.dart';
 
 void main(){
   runApp(MyApp());
     }
 
  class MyApp extends StatelessWidget{
+
+  const  MyApp({super.key});
   @override
   Widget build(BuildContext context){
+
+    //final wordPair = WordPair.random();
+
         return MaterialApp(
           //theme:ThemeData(primaryColor:Colors.redAccent),This would not make the appbar red.
           //debugShowCheckedModeBanner: false, this removes the debug banner.
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text('Generating-WordPair'),
-          backgroundColor: Colors.amber, //this syntax sets the appbar color to amber and this is the correct syntax and position to set the background color.
-        ),
-      ),
+      home: RandomWords()
+
         );
+
   }
 
  }
