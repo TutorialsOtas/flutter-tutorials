@@ -1,4 +1,5 @@
 import 'package:all_you_need_to_know/home_page.dart';
+import 'package:all_you_need_to_know/profile_page.dart';
 import 'package:flutter/material.dart';
 
 void main(){
@@ -41,6 +42,11 @@ class _RootPageState extends State<RootPage>{
 
   int currentPage = 0;
 
+  List<Widget>pages = [
+    HomePage(),
+    ProfilePage()
+  ];
+
   @override
   Widget build(BuildContext context){
 
@@ -54,7 +60,7 @@ class _RootPageState extends State<RootPage>{
 
       ),
 
-      body: HomePage(),
+      body: pages[currentPage ],
 
       floatingActionButton: FloatingActionButton(onPressed: (){
 
